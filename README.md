@@ -1,9 +1,6 @@
-Here’s a detailed, hard-hitting structure for your Git/GitHub learning notes in a professional `README.md` style. This format will make it easy to refer back to essential commands and best practices as you level up in Git.
-
----
+# 🛠️ Git & GitHub Mastery Notes
 
 ```markdown
-# 🛠️ Git & GitHub Mastery Notes
 
 _A comprehensive, no-nonsense guide for mastering Git and GitHub’s essential commands, collaboration practices, and advanced workflows._
 
