@@ -1,4 +1,4 @@
-# 🛠️ Git & GitHub Mastery Notes
+<!-- # 🛠️ Git & GitHub Mastery Notes
 
 ```markdown
 
@@ -27,7 +27,7 @@ _A comprehensive, no-nonsense guide for mastering Git and GitHub’s essential c
   git add <file>
   git commit -m "Message"
   ```
-  - **View Status**: `git status`  
+  - **View Status**: `git status`
   - **History Log**: `git log`
 
 ## 🔹 **2. Branching Done Right**
@@ -63,7 +63,7 @@ _A comprehensive, no-nonsense guide for mastering Git and GitHub’s essential c
   ```bash
   git clone <repo-URL>
   ```
-- **Fork & Pull Requests**: 
+- **Fork & Pull Requests**:
   - Fork repositories to contribute independently, then submit a Pull Request (PR) for code reviews.
 
 ## 🔹 **4. Essential Collaboration**
@@ -109,4 +109,6 @@ _A comprehensive, no-nonsense guide for mastering Git and GitHub’s essential c
 ---
 
 This will give you a concise, effective roadmap to mastering Git & GitHub.
-```
+``` -->
+
+## Subheader
