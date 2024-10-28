@@ -1,0 +1,68 @@
+<!-- templates/blog/blog_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Posts</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .blog-list-container {
+        margin-top: 50px;
+      }
+      .blog-list-item {
+        border-bottom: 1px solid #ddd;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .blog-title {
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .action-buttons a {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container blog-list-container">
+      <h2 class="text-center">Blog Posts</h2>
+      <div class="list-group">
+        {% for post in blog_posts %}
+        <div class="list-group-item blog-list-item">
+          <span class="blog-title">{{ post.title }}</span>
+          <div class="action-buttons">
+            <a
+              href="{% url 'edit_blog' post.id %}"
+              class="btn btn-sm btn-primary"
+              >Edit</a
+            >
+            <a
+              href="{% url 'delete_blog' post.id %}"
+              class="btn btn-sm btn-danger"
+              >Delete</a
+            >
+          </div>
+        </div>
+        {% empty %}
+        <p class="text-center">No blog posts available.</p>
+        {% endfor %}
+      </div>
+      <div class="text-center mt-4">
+        <a href="{% url 'create_blog' %}" class="btn btn-success"
+          >Create New Blog</a
+        >
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<!-- templates/blog/blog_list.html -->
+<h2>Blog Posts</h2>
+<ul>
+  {% for post in blog_posts %}
+  <li>
+    <a href="{% url 'edit_blog' post.id %}">{{ post.title }}</a>
+    <a href="{% url 'delete_blog' post.id %}">Delete</a>
+  </li>
+  {% endfor %}
+</ul>
+<a href="{% url 'create_blog' %}">Create New Blog</a>
